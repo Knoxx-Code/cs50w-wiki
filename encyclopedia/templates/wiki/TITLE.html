@@ -1,0 +1,12 @@
+{#{% extends "wiki/layout.html" %}#}
+{% extends "encyclopedia/layout.html" %}
+{% block title %}
+    {{ title }}
+{% endblock %}
+{% block body %}
+<div>
+    {{ content | safe }}
+    <input type="hidden" name="entry_title" value="{{ title }}">
+    <p><a class="edit_entry" href="{% url 'wiki:edit_page' title=title %}" >Edit</a></p>
+</div>
+{% endblock %}

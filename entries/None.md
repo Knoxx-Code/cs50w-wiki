@@ -1,0 +1,5 @@
+# Wisdom
+
+
+
+Straight up facts.
